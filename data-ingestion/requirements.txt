@@ -1,0 +1,17 @@
+langchain
+langchain-openai
+langchain-groq
+faiss-cpu
+tiktoken
+langchain-community
+chromadb
+sentence-transformers
+pypdf
+python-dotenv
+ipykernel
+pandas
+docx2txt
+unstructured
+python-docx
+openpyxl
+jq
