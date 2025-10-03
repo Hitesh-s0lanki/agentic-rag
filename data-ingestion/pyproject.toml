@@ -3,7 +3,7 @@ name = "data-ingestion"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.11"
 dependencies = [
     "chromadb>=1.0.20",
     "docx>=0.2.4",
@@ -11,6 +11,7 @@ dependencies = [
     "faiss-cpu>=1.12.0",
     "ipykernel>=6.30.1",
     "jq>=1.10.0",
+    "langchain-huggingface>=0.3.1",
     "langchain>=0.3.27",
     "langchain-community>=0.3.29",
     "langchain-groq>=0.3.7",
@@ -23,4 +24,9 @@ dependencies = [
     "sentence-transformers>=5.1.0",
     "tiktoken>=0.11.0",
     "unstructured>=0.18.14",
+    "langchain-astradb>=0.6.1",
+    "langchain-core>=0.3.75",
+    "langchain-pinecone>=0.2.12",
+    "pinecone>=7.3.0",
+    "langchain-experimental>=0.3.4",
 ]
