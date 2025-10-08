@@ -1,0 +1,40 @@
+# --- core ---
+python-dotenv
+pandas
+numpy
+openpyxl
+ipykernel
+
+# --- langchain ecosystem (v0.3+) ---
+langchain
+langchain-core
+langchain-community
+langchain-openai
+langchain-groq
+langchain-huggingface
+langchain-astradb
+langchain-experimental
+langchain-pinecone
+langchain-text-splitters
+tiktoken
+
+# --- vector / stores ---
+faiss-cpu
+chromadb
+rank_bm25
+pinecone
+
+# --- NLP / models ---
+transformers
+sentence-transformers
+torch
+
+# --- RAG file loaders / parsing ---
+pypdf
+python-docx
+docx2txt
+unstructured
+PyMuPDF  # <- provides import fitz
+
+# --- optional/advanced ---
+# jq  # only if you truly need it; can be tricky on Windows
