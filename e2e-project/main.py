@@ -1,7 +1,13 @@
 """Main application entry point for Agentic RAG system"""
 
+import os
 import sys
 from pathlib import Path
+from dotenv import load_dotenv
+
+load_dotenv()
+
+
 
 # Add src to path
 sys.path.append(str(Path(__file__).parent))
@@ -10,6 +16,8 @@ from src.config.config import Config
 from src.document_ingestion.document_processor import DocumentProcessor
 from src.vectorstore.vectorstore import VectorStore
 from src.graph_builder.graph_builder import GraphBuilder
+
+urls_file_path = os.getenv("URLS_FILE_PATH", "data/urls.txt")
 
 class AgenticRAG:
     """Main Agentic RAG application"""
@@ -92,7 +100,7 @@ class AgenticRAG:
 def main():
     """Main function"""
     # Example: Load URLs from file if exists
-    urls_file = Path("data/urls.txt")
+    urls_file = Path(urls_file_path)
     urls = None
     
     if urls_file.exists():
